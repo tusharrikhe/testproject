@@ -1,36 +1,38 @@
-<div style="color:white; background-color:turquoise; padding :10px">
-  <h2 class="text-center" style="margin-top:20px">
-    Employee Management App..!
-  </h2>
-</div>
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-7">
-      <router-outlet></router-outlet>
-    </div>
-    <div class="col-md-5">
-      <br />
-      <img src="../../../../assets/images/untitled.png" />
+  <div style="color:white; background-color:turquoise; padding :10px">
+    <h2 class="text-center" style="margin-top:20px">
+      Employee Management App..!
+    </h2>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <router-outlet></router-outlet>
+      </div>
+      <div class="col-md-5">
+        <br />
+         <img src="../../../../assets/images/untitled.png" /> 
+      </div>
     </div>
   </div>
-</div>
-<br />
+  <br />
 
-<footer>
-  <div class="row">
-    <div class="col-md-7">
-      <span class="text-danger">
-        <strong
-          >This site is copyright &copy; to CAG.All rights are reserved
-          here</strong
-        >
-      </span>
+  <footer>
+    <div class="row">
+      <div class="col-md-7">
+        <span class="text-danger">
+          <strong
+            style="color:tomato">This site is copyright &copy; to CAG.All rights are reserved
+            here</strong
+          >
+        </span>
+      </div>
+      <div class="col-md-5">
+        <span class="text-primary text-right">
+          <strong>{{ todaysDate | date: "dd-MM-yyyy" }}</strong>
+        </span>
+      </div>
     </div>
-    <div class="col-md-5">
-      <span class="text-primary text-right">
-        <strong>{{ todaysDate | date: "dd-MM-yyyy" }}</strong>
-      </span>
-    </div>
-  </div>
-</footer>
+  </footer>
+

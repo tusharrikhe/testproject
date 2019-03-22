@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'testproject';
 
+  getUrl()
+{
+  return "url('assets\images\pexels.jpeg')";
+}
 todaysDate=new Date();
 }
